@@ -35,6 +35,28 @@
 .final-line-button span{font-size:.82rem}
 .final-offer{padding-bottom:4rem}
 @media(max-width:480px){.legacy-types{grid-template-columns:1fr;gap:0}}
+
+/* Match the reference offer's measured type scale; keep higher text contrast. */
+.benefits.restored-panel .book-kicker,.benefits.restored-panel .book-invite{font-size:.625rem;line-height:1.5}
+.benefits.restored-panel .book-kicker{font-weight:700}
+.benefits.restored-panel h2{font-size:1.125rem;font-weight:800;line-height:1.375}
+.benefits.restored-panel .legacy-chapters h3,.benefits.restored-panel .legacy-chapters li,.benefits.restored-panel .after h3{font-size:.75rem;font-weight:700;line-height:1.5}
+.benefits.restored-panel .book-summary{font-size:.6875rem;line-height:1.625}
+.benefits.restored-panel .after p,.benefits.restored-panel .note{font-size:.625rem;line-height:1.625}
+.benefits.restored-panel .book-support-tag,.final-line-button span{font-size:.5625rem;line-height:1.5}
+.benefits.restored-panel .book-support-tag,.final-line-button strong{font-weight:800}
+.final-line-button strong{font-size:.75rem;line-height:1.5}
+.benefits.restored-panel .book-invite,.benefits.restored-panel .book-summary,.benefits.restored-panel .after p,.benefits.restored-panel .note{color:#5c4941}
+.aid-flow{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px;list-style:none;padding:0!important;margin:9px 0;color:#703f35}
+.aid-flow li{display:grid;justify-items:center;align-content:start;gap:4px;position:relative;text-align:center;padding:7px 3px;border-radius:9px;background:#f9e8da;font-size:.8rem;font-weight:700;line-height:1.25}
+.aid-flow li+li{margin-top:0}
+.aid-flow li+li::before{content:"›";position:absolute;top:50%;left:-6px;transform:translateY(-50%);font-weight:900;color:#925248}
+.legacy-types article:nth-child(2) .aid-flow li{background:#f4ded4}
+.aid-flow svg,.legacy-chapters svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.55;stroke-linecap:round;stroke-linejoin:round}
+.honest-flow li{background:#fff0e2}
+.benefit-list.legacy-chapters li{display:grid;grid-template-columns:25px minmax(0,1fr);gap:8px;align-items:center;padding:5px 2px}
+.legacy-chapters svg{color:#864234;background:#f8e7db;border-radius:8px;padding:3px;width:24px;height:24px}
+@media(min-width:481px) and (max-width:565px){.aid-flow li{font-size:.75rem}}
 </style></head>
 <body>
 <main class="page" id="top">
@@ -86,11 +108,11 @@
     <p>案件に応募する前に、まずこの違いを図解でイメージしておきましょう！</p>
     <div class="legacy-types">
       <article class="restored-box">
-        <p class="eyebrow">タイプA <span aria-hidden="true">🤖📝</span></p><h3>本文までAIで出力する</h3>
+        <p class="eyebrow">タイプA <span aria-hidden="true">🤖📝</span></p><h3>本文までAIで出力する</h3><ol class="aid-flow"><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h8l4 4v14H6zM14 3v5h4M9 12h6m-6 4h6"/></svg><span>構成</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v11H9l-5 4zM8 9h8m-8 3h5"/></svg><span>AIで本文</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h14v16H5zM8 12l3 3 5-6"/></svg><span>人が確認</span></li></ol>
         <ul><li>ChatGPTで構成も本文も<strong>まるごと作る</strong></li><li>2chまとめ・解説系動画に多い</li><li>量産しやすく<strong>初心者向け</strong></li></ul>
       </article>
       <article class="restored-box">
-        <p class="eyebrow">タイプB <span aria-hidden="true">🧠✨</span></p><h3>構成づくりが本体</h3>
+        <p class="eyebrow">タイプB <span aria-hidden="true">🧠✨</span></p><h3>構成づくりが本体</h3><ol class="aid-flow"><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 15 1 4 4-1 10-10-4-4zm8-8 4 4"/></svg><span>人が構成</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v11H9l-5 4zM8 9h8m-8 3h5"/></svg><span>AIで形に</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h14v16H5zM8 12l3 3 5-6"/></svg><span>人が確認</span></li></ol>
         <ul><li>本文はツール任せ。ライターは<strong>「面白い構成を考える」</strong>のが仕事</li><li>物語やストーリー系動画に多い</li><li>高単価だが<strong>構成力が問われる</strong></li></ul>
       </article>
     </div>
@@ -110,23 +132,23 @@
   </section>
 
   <section class="section benefits restored-panel" id="line-benefits" aria-labelledby="benefits-title">
-    <p class="eyebrow">ノウハウを凝縮した限定デジタルブック</p>
+    <p class="eyebrow book-kicker">ノウハウを凝縮した限定デジタルブック</p>
     <h2 id="benefits-title">『AIマネタイズの教科書』</h2>
-    <p>公式LINEにお友だち登録していただいた方限定で<br>無料プレゼント中🎁</p>
+    <p class="book-invite">公式LINEにお友だち登録していただいた方限定で<br>無料プレゼント中🎁</p>
     <a class="line-banner" href="https://mimatsu037.github.io/line-link/" aria-label="公式LINEで無料で受け取る"><img src="assets/line-benefits-cta.jpg" alt="AIマネタイズの教科書｜公式LINEで無料で受け取る"></a>
     <div class="benefit-list legacy-chapters">
       <h3>📖 教科書の中身を少しだけご紹介！</h3>
       <ul>
-        <li>💎第一章: いま一番始めやすいAIマネタイズ手法</li>
-        <li>💎第二章: ChatGPT収益化プロンプト</li>
-        <li>💎第三章: AIマネタイズ神テンプレート</li>
-        <li>💎第四章: マネタイズのための生成AIツール3選</li>
-        <li>💎第五章: AI×SNSで収益を生むリアル事例</li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="4"/><path d="M12 12l8-8"/></svg><span>💎第一章: いま一番始めやすいAIマネタイズ手法</span></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v11H9l-5 4zM8 9h8m-8 3h5"/></svg><span>💎第二章: ChatGPT収益化プロンプト</span></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h8l4 4v14H6zM14 3v5h4M9 12h6m-6 4h6"/></svg><span>💎第三章: AIマネタイズ神テンプレート</span></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 7a4 4 0 0 0-4 5l-5 5 2 2 5-5a4 4 0 0 0 5-4l-3 2-2-2z"/></svg><span>💎第四章: マネタイズのための生成AIツール3選</span></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4v16h16M7 15l4-5 3 2 5-6m-4 0h4v4"/></svg><span>💎第五章: AI×SNSで収益を生むリアル事例</span></li>
       </ul>
     </div>
-    <p>150万円の損失からようやく掴み取った、<br>「寝かしつけ後の30分が"収入を生む時間"に変わる実践マニュアル」を一冊に詰め込みました。</p>
+    <p class="book-summary">150万円の損失からようやく掴み取った、<br>「寝かしつけ後の30分が"収入を生む時間"に変わる実践マニュアル」を一冊に詰め込みました。</p>
     <aside class="after">
-      <span class="eyebrow">特別企画</span>
+      <span class="eyebrow book-support-tag">特別企画</span>
       <h3>希望者限定『AI収益化サポート会』の実施</h3>
       <p>LINE読者様限定で、お家で安全に進められる特別なサポート会をご案内しています🌱</p>
     </aside>
@@ -351,9 +373,10 @@
     <p class="note"><span class="keep">画像をタップすると</span><span class="keep">オープンチャットが開きます。</span></p>
   </section>
   <section class="section honest-restored" aria-labelledby="honest-title">
-    <h2 id="honest-title">⚠️ でも、正直にお伝えします。</h2>
+    <h2 id="honest-title">⚠️ 正直にお伝えします。</h2>
     <p>ここまで読んで、「プロンプトが分かったから自分でもできそう！」と思ったかもしれません。</p>
     <p>でも実は…<br><strong>「プロンプトを知っていること」と<br>「実際に継続して稼げること」は全く別物</strong><br>なんです。</p>
+    <ol class="aid-flow honest-flow"><li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="4"/><path d="M12 12l8-8"/></svg><span>1件目を探す</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 15 1 4 4-1 10-10-4-4zm8-8 4 4"/></svg><span>応募文を書く</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h14v16H5zM8 12l3 3 5-6"/></svg><span>台本を納品</span></li></ol>
     <ul class="honest-questions">
       <li>🤔 最初の1件目の仕事はどうやって取るの？</li>
       <li>🤔 クライアントに選ばれる応募文の書き方は？</li>
@@ -370,23 +393,23 @@
   </section>
   <section class="section benefits restored-panel final-offer" aria-labelledby="final-benefits-title">
     <p class="eyebrow">👑 無料で今すぐ手に入る 👑</p>
-    <p class="eyebrow">ノウハウを凝縮した限定デジタルブック</p>
+    <p class="eyebrow book-kicker">ノウハウを凝縮した限定デジタルブック</p>
     <h2 id="final-benefits-title">『AIマネタイズの教科書』</h2>
-    <p>公式LINEにお友だち登録していただいた方限定で<br>無料プレゼント中🎁</p>
+    <p class="book-invite">公式LINEにお友だち登録していただいた方限定で<br>無料プレゼント中🎁</p>
     <a class="line-banner" href="https://mimatsu037.github.io/line-link/" aria-label="公式LINEで無料で受け取る"><img src="assets/line-benefits-cta.jpg" alt="AIマネタイズの教科書｜公式LINEで無料で受け取る"></a>
     <div class="benefit-list legacy-chapters">
       <h3>📖 教科書の中身を少しだけご紹介！</h3>
       <ul>
-        <li>💎第一章: いま一番始めやすいAIマネタイズ手法</li>
-        <li>💎第二章: ChatGPT収益化プロンプト</li>
-        <li>💎第三章: AIマネタイズ神テンプレート</li>
-        <li>💎第四章: マネタイズのための生成AIツール3選</li>
-        <li>💎第五章: AI×SNSで収益を生むリアル事例</li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="4"/><path d="M12 12l8-8"/></svg><span>💎第一章: いま一番始めやすいAIマネタイズ手法</span></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v11H9l-5 4zM8 9h8m-8 3h5"/></svg><span>💎第二章: ChatGPT収益化プロンプト</span></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h8l4 4v14H6zM14 3v5h4M9 12h6m-6 4h6"/></svg><span>💎第三章: AIマネタイズ神テンプレート</span></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 7a4 4 0 0 0-4 5l-5 5 2 2 5-5a4 4 0 0 0 5-4l-3 2-2-2z"/></svg><span>💎第四章: マネタイズのための生成AIツール3選</span></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4v16h16M7 15l4-5 3 2 5-6m-4 0h4v4"/></svg><span>💎第五章: AI×SNSで収益を生むリアル事例</span></li>
       </ul>
     </div>
-    <p>150万円の損失からようやく掴み取った、<br>「寝かしつけ後の30分が"収入を生む時間"に変わる実践マニュアル」を一冊に詰め込みました。</p>
+    <p class="book-summary">150万円の損失からようやく掴み取った、<br>「寝かしつけ後の30分が"収入を生む時間"に変わる実践マニュアル」を一冊に詰め込みました。</p>
     <aside class="after">
-      <span class="eyebrow">特別企画</span>
+      <span class="eyebrow book-support-tag">特別企画</span>
       <h3>希望者限定『AI収益化サポート会』の実施</h3>
       <p>LINE読者様限定で、お家で安全に進められる特別なサポート会をご案内しています🌱</p>
     </aside>

@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="ja"><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#fff8f3">
+  <meta name="description" content="寝かしつけ後のスキマ時間で、AIの下書きを声に出せる台本にする、みなの実践ガイド。">
+  <title>みな流 ChatGPT×台本作成 実践ガイド</title>
+  <link rel="stylesheet" href="style.css">
+  
+<meta name="robots" content="noindex,nofollow"><script src="copy.js" defer=""></script></head>
+<body>
+<main class="page" id="top">
+  <header class="hero">
+    <img class="guide-cover" src="assets/mina-script-title.png" width="1280" height="720" alt="初心者向け・コピペで進める保存版。みな流 ChatGPT×台本作成 実践ガイド。">
+    <h1 class="sr-only">みな流 ChatGPT×台本作成 実践ガイド</h1>
+    <p class="intro"><span class="keep">寝かしつけ後のスキマ時間で、</span><span class="keep">AIの下書きを</span><span class="keep">声に出せる台本に。</span><span class="keep">誰に・何のためにを決めて、</span><span class="keep">最後の言い方を整えます。</span></p>
+    <a class="profile" href="https://www.instagram.com/mina_ai_fukugyo/">
+      <img src="assets/mina-avatar.png" alt="" width="48" height="48">
+      <span><small>AI×SNSで在宅収入を叶える主婦</small><strong>みな</strong> <span class="handle">@mina_ai_fukugyo</span></span>
+    </a>
+    <a class="jump" href="#practice">作例のプロンプトへ ↓</a>
+  </header>
+
+  <section class="section worries" aria-labelledby="worries-title">
+    <h2 id="worries-title"><span class="keep">こんな気持ち、</span><span class="keep">ありませんか？</span></h2>
+    <ul>
+      <li><span aria-hidden="true">💭</span><p><span class="keep">AIを使って家で収入を得たい。</span><span class="keep">でも、案件って</span><span class="keep">どこで探せばいいの？</span></p></li>
+      <li><span aria-hidden="true">💭</span><p><span class="keep">募集は見つけたけど、</span><span class="keep">未経験の私にできる依頼か</span><span class="keep">どうやって見分けるんだろう。</span></p></li>
+      <li><span aria-hidden="true">💭</span><p><span class="keep">仕事として引き受けるなら、</span><span class="keep">AIの下書きをどう直して</span><span class="keep">納品すればいいか知りたい。</span></p></li>
+    </ul>
+    <p class="section-lead"><span class="keep">まずは架空の商品紹介案件で、</span><span class="keep">依頼文の読み方から納品前の確認まで</span><span class="keep">一緒に練習してみましょう。</span></p>
+    <figure class="mina-scene mina-phone mina-photo-phone"><img src="assets/mina-light-phone.webp" width="1350" height="575" loading="lazy" decoding="async" alt="明るい室内でスマートフォンを手にするイメージ"></figure>
+  </section>
+
+  <section class="section story" aria-labelledby="story-title">
+    <div class="story-card">
+      <img src="assets/my-story-banner.png" alt="MY STORY 私もずっと、仕方ないと思っていました。">
+      <h2 id="story-title"><span class="keep">私も、家事と育児で</span><span class="keep">一日が終わっていました</span></h2>
+      <p>専業主婦の頃は、自分の欲しいものを買うにも夫に遠慮して、つい我慢していました。</p>
+      <p>自分でも収入を作りたくて、物販やハンドメイド、ポスティングにも挑戦。それでも、時間をかけた分だけ結果が出るわけではありませんでした。</p>
+      <p>AIも最初は、子どもの夜泣きを相談するくらい。少しずつ使い方を覚えて、暮らしの合間にできる仕事を増やしました。</p>
+      <p>だから、これから始める人には、何をどの順番で進めるかが分かる形で届けたい。今回は、案件の依頼文を読み解くところから、ChatGPTで下書きを作り、自分の手で見直して納品できる台本に仕上げるまでの流れをまとめました。</p>
+      <p class="story-callout"><span class="keep">まずは短い台本で、</span><span class="keep">直す一文を選んでみてください。</span></p>
+    </div>
+  </section>
+
+  <section class="section benefits" id="line-benefits" aria-labelledby="benefits-title">
+    <p class="eyebrow keep">ここから先はLINE登録者限定 🎁</p>
+    <h2 id="benefits-title"><span class="keep">『おうちワーク</span><span class="keep">始め方ガイド』</span><span class="title-line"><span class="keep">5大特典を</span><span class="keep">無料プレゼント中</span></span></h2>
+    <a class="line-banner" href="https://mimatsu037.github.io/line-link/" aria-label="LINEに登録して5大特典を受け取る"><img src="assets/line-benefits-cta.jpg" alt="公式LINE登録特典。AIマネタイズの教科書。5大特典をまとめて受け取る。"></a>
+    <p><span class="keep">家事や育児の合間に、</span><span class="keep">AIでできる仕事を探すなら。</span><span class="keep">仕事の選び方から発信まで、</span><span class="keep">最初に迷いやすいところを</span><span class="keep"><strong>『AIマネタイズの教科書』</strong>に</span><span class="keep">まとめました。</span></p>
+    <div class="benefit-list">
+      <h3>登録でもらえる5大特典</h3>
+      <ol>
+        <li><span class="keep">AIマネタイズの選び方</span><p><span class="keep">時間と得意なことから、</span><span class="keep">自分に合う仕事を探す。</span></p></li>
+        <li><span class="keep">ChatGPTで使える</span><span class="keep">収益化プロンプト集</span><p><span class="keep">アイデア出しや発信に</span><span class="keep">使える指示文を紹介。</span></p></li>
+        <li><span class="keep">AIマネタイズの</span><span class="keep">実践テンプレート</span><p><span class="keep">次にやることを</span><span class="keep">迷わず決めるための型。</span></p></li>
+        <li><span class="keep">収益化に役立つ</span><span class="keep">生成AIツール3選</span><p><span class="keep">作業に合わせた</span><span class="keep">ツールの使い分け。</span></p></li>
+        <li><span class="keep">AI×SNSで収益につながった</span><span class="keep">実践事例</span><p><span class="keep">実際に何を試し、</span><span class="keep">どう改善したかが分かる。</span></p></li>
+      </ol>
+    </div>
+    <aside class="after">
+      <h3>登録後に分かること</h3>
+      <p><span class="keep">自分の得意なことや</span><span class="keep">使える時間に合わせて、</span><span class="keep">どの仕事から試すか、</span><span class="keep">何をAIに任せるかを</span><span class="keep">整理できます。</span></p>
+    </aside>
+    <p class="note"><span class="keep">画像をタップすると、</span><span class="keep">LINE登録ページが開きます。</span><span class="keep">特典の内容や配布期間は</span><span class="keep">変更される場合があります。</span></p>
+  </section>
+  <section class="section roles" aria-labelledby="roles-title">
+        <h2 id="roles-title"><span class="keep">下書きはChatGPTに。</span><span class="keep">伝わる言い方は、</span><span class="keep">自分で整える。</span></h2>
+        <figure class="mina-scene mina-open mina-photo-laptop"><img src="assets/mina-light-laptop.webp" width="1350" height="574" loading="lazy" decoding="async" alt="明るい室内でノートパソコンに向かうイメージ"></figure>
+        <ol class="handoff-diagram" aria-label="人とChatGPTの役割分担">
+          <li><b>私が決める</b><span>誰に・何を届ける？</span></li>
+          <li><b>ChatGPTに頼む</b><span>構成と本文の下書き</span></li>
+          <li><b>私が仕上げる</b><span>事実・語尾・読み心地</span></li>
+        </ol>
+  </section>
+
+  <section class="section" id="setup" aria-labelledby="setup-title">
+        <div class="section-heading"><p class="eyebrow">一緒にやってみよう</p><h2 id="setup-title"><span class="keep">AIの下書きを整える</span><span class="keep">台本づくりの3STEP</span></h2></div>
+        <figure class="mina-scene mina-typing mina-photo-desk"><img src="assets/mina-light-desk.webp" width="1350" height="575" loading="lazy" decoding="async" alt="机でメモとパソコンを使うイメージ"></figure>
+        <ol class="job-map" aria-label="台本案件の全体の流れ">
+          <li><a href="#job-find"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10" cy="10" r="5.5"/><path d="m14 14 6 6"/></svg><span>案件を探す</span></a></li>
+          <li><a href="#job-write"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h16M5 15l1 4 4-1L20 8l-4-4L5 15Zm8-8 4 4"/></svg><span>台本を作る</span></a></li>
+          <li><a href="#job-deliver"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h14v16H5zM8 12l3 3 5-6"/></svg><span>納品する</span></a></li>
+        </ol>
+        <ol class="steps">
+          <li class="card" id="job-find">
+            <h3><span>案件を探す</span></h3>
+            <figure class="infographic job-scopes">
+              <figcaption>同じ「台本作成」でも、どこまでやる？</figcaption>
+              <img src="assets/diagram-work.webp" width="1024" height="576" loading="lazy" decoding="async" alt="">
+              <table><caption class="sr-only">案件の作業範囲を比べる</caption><thead><tr><th scope="col">募集のタイプ</th><th scope="col">台本</th><th scope="col">調査</th><th scope="col">撮影</th></tr></thead><tbody>
+                <tr><th scope="row">台本だけ</th><td><span aria-hidden="true">●</span><span class="sr-only">含む</span></td><td><span aria-hidden="true">―</span><span class="sr-only">含まない</span></td><td><span aria-hidden="true">―</span><span class="sr-only">含まない</span></td></tr>
+                <tr><th scope="row">リサーチ＋台本</th><td><span aria-hidden="true">●</span><span class="sr-only">含む</span></td><td><span aria-hidden="true">●</span><span class="sr-only">含む</span></td><td><span aria-hidden="true">―</span><span class="sr-only">含まない</span></td></tr>
+                <tr><th scope="row">台本＋撮影</th><td><span aria-hidden="true">●</span><span class="sr-only">含む</span></td><td><span aria-hidden="true">―</span><span class="sr-only">含まない</span></td><td><span aria-hidden="true">●</span><span class="sr-only">含む</span></td></tr>
+              </tbody></table>
+              <p class="infographic-note">●＝含む（比較例）。実際は募集文で確認。</p>
+            </figure>
+            <ul class="diagram-tags" aria-label="募集ごとに確認"><li>AI使用可否</li><li>守秘・AIへの入力範囲</li><li>納期・納品形式</li></ul>
+            
+        <div class="card" style="counter-increment:none;margin-top:9px">
+          <h4 style="margin:0">クラウドワークス</h4><p><span class="keep">一覧で「動画 台本作成」を検索。</span></p>
+          <a class="source" href="https://crowdworks.jp/public/jobs" target="_blank" rel="noopener noreferrer">仕事の一覧を開く ↗</a>
+        </div>
+            
+        <div class="card" style="counter-increment:none;margin-top:9px">
+          <h4 style="margin:0">ランサーズ</h4><p><span class="keep">シナリオの検索一覧でも、</span><span class="keep">AI使用の範囲は個別に確認。</span></p>
+          <a class="source" href="https://www.lancers.jp/work/search/writing/script?open=0&amp;ai_permission%5B%5D=1" target="_blank" rel="noopener noreferrer">シナリオの募集を見る ↗</a>
+        </div>
+            
+        <div class="card" style="counter-increment:none;margin-top:9px">
+          <h4 style="margin:0">ココナラ</h4><p><span class="keep">公開募集から探す選択肢。</span><span class="keep">リンク先はコピーライティング。</span><span class="keep">台本の依頼か、内容を読んで確認。</span></p>
+          <a class="source" href="https://coconala.com/requests/categories/370" target="_blank" rel="noopener noreferrer">公開募集を確認する ↗</a>
+        </div>
+            <p class="note">不明点は依頼主へ。顧客名・未公開資料は無断でAIに入力しません。</p>
+          </li>
+          <li class="card" id="job-write">
+            <h3><span>台本を作る</span></h3>
+            <div class="mini-flow"><span>誰に・何のため</span><span>構成案</span><span>本文を作る</span></div>
+            <p class="note">入力できる情報だけを渡し、同じチャットで本文をパートごとに作ります。</p>
+            <a class="source" href="#practice">コピーできるプロンプトへ ↓</a>
+          </li>
+          <li class="card" id="job-deliver">
+            <h3><span>納品する</span></h3>
+            <figure class="infographic delivery-check">
+              <figcaption>「できた」から「納品できる」まで</figcaption>
+              <img src="assets/diagram-delivery.webp" width="1024" height="576" loading="lazy" decoding="async" alt="">
+              <ol aria-label="納品前の三つの確認">
+                <li><b>商品情報</b><span>支給資料と照らす</span></li><li><b>声と秒数</b><span>語尾と尺を確認</span></li><li><b>指定ファイル</b><span>開き直して渡す</span></li>
+              </ol>
+            </figure>
+            <a class="source" href="#rewrite">一文の手直しを見る ↓</a>
+          </li>
+        </ol></section>
+
+  <section class="section prompt-section" id="practice" aria-labelledby="prompt-title">
+        <div class="section-heading"><h2 id="prompt-title"><span class="keep">依頼文から、</span><span class="keep">声に出せる台本へ</span></h2></div>
+        <figure class="mina-scene mina-pause mina-photo-laptop"><img src="assets/mina-light-laptop.webp" width="1350" height="574" loading="lazy" decoding="async" alt="明るい室内でノートパソコンに向かうイメージ"></figure>
+        <figure class="infographic brief-map">
+          <figcaption>依頼文を読むとき、拾うのはこの4つ</figcaption>
+          <div class="brief-board">
+            <img src="assets/diagram-brief.webp" width="1024" height="576" loading="lazy" decoding="async" alt="">
+            <dl>
+              <div><dt>誰に</dt><dd>玄関で鍵を探しがちなママ</dd></div>
+              <div><dt>目的</dt><dd>使い方を見せ、商品ページへ</dd></div>
+              <div><dt>支給素材</dt><dd>バッグの全体・内側・手元</dd></div>
+              <div><dt>納品形式</dt><dd>30秒前後・Googleドキュメント</dd></div>
+            </dl>
+          </div>
+        </figure>
+        <details class="prompt-card"><summary>練習用の架空依頼を開く</summary><div class="prompt-bar"><button type="button" data-copy="fictional-brief">全文をコピー</button></div><pre id="fictional-brief" class="prompt-text">【練習用・架空案件】雑貨ショップのInstagramリール台本
+
+お世話になっております。新作「仕切りトート」を紹介する30秒前後のリール台本を1本お願いします。
+
+■ 見てほしい人
+子どもとの外出で荷物が多く、玄関で鍵や小物を探しがちなママ。
+
+■ ゴール
+どんな風に荷物を分けられるかを伝え、プロフィールの商品リンクから詳細を見てもらうこと。
+
+■ 商品情報・使える素材
+バッグの内側に仕切りと小物用ポケットがあります。こちらから「バッグの全体」「真上から見た内側」「鍵・水筒・おむつポーチを入れる手元」の動画を支給します。玄関のシーンは、既存素材の有無を事前に確認してください。
+
+■ 台本の条件
+最初の3秒は日常の困りごとから。押し売りっぽくならない親しみやすい口調で、最後にプロフィールの商品リンクを案内してください。支給情報にない価格、容量、耐久性、口コミは書かないでください。
+
+■ 納品
+30秒前後で、カットごとの「秒数／ナレーション／テロップ／画面案」をGoogleドキュメント1本にまとめてください。初稿はご依頼から3日以内。AIは下書きに使ってOKですが、商品情報の確認と最終の読み合わせは人が行ってください。</pre></details>
+        <ol class="prompt-route" aria-label="コピーするプロンプトの順番">
+          <li><b>構成を決める</b><span>導入 → 展開 → 締め</span></li>
+          <li><b>本文を書き出す</b><span>同じチャットで1パートずつ</span></li>
+          <li><b>人が手直し</b><span>事実・声・尺</span></li>
+        </ol>
+        
+        <details class="prompt-card">
+          <summary>STEP 1｜構成案のプロンプト</summary>
+          <div class="prompt-bar"><button type="button" data-copy="prompt1" aria-label="STEP 1｜構成案のプロンプトを全文コピー">全文をコピー</button></div>
+          <pre id="prompt1" class="prompt-text">以下のクラウドワークスの案件依頼文を読み、プロの動画シナリオライターの視点で「台本の構成案」を作成してください。
+
+【依頼文】
+（ここにクラウドワークスの依頼文をそのまま貼り付ける）
+
+【出力要件】
+以下を必ず記載してください。
+・登場人物とその役割
+・全体の流れ（導入→展開→まとめ）
+・各パートの文字数配分
+・視聴者を惹きつけるためのフックや工夫
+・（もしあれば）クライアントに事前に確認すべき不明点や質問事項</pre>
+        </details>
+        <div class="example"><h3>誰に・目的・構成を見る</h3><p><span class="keep">冒頭3秒で困りごとが伝わる？</span><span class="keep">特徴を実際の使い方で見せている？</span><span class="keep">商品ページへの案内は自然？</span><span class="keep">条件の不明点は先に確認します。</span></p></div>
+        
+        <details class="prompt-card">
+          <summary>STEP 2｜本文作成のプロンプト</summary>
+          <div class="prompt-bar"><button type="button" data-copy="prompt2" aria-label="STEP 2｜本文作成のプロンプトを全文コピー">全文をコピー</button></div>
+          <pre id="prompt2" class="prompt-text">確定した構成案に沿って、台本の本文を作成してください。視聴者が思わず見入ってしまうような台本に仕上げたいです。
+
+【今回の執筆範囲】（例：30秒リールの導入から商品リンク案内まで）
+【尺・文字数の目安】（例：30秒前後。冒頭のフックは3秒以内）
+【全体の雰囲気・口調】（例：親しみやすい語り口）
+
+【指示】
+・状況がすぐに映像として思い浮かぶよう、セリフやナレーションは解像度を高く、具体的に書いてください。
+・視聴者の感情が動くような、メリハリのある展開やセリフ回しを意識してください。
+・商品紹介の場合は、支給された情報と素材だけを使い、依頼文で指定された行き先に自然につなげてください。納品形式が指定されている場合は、その項目ごとに出力してください。</pre>
+        </details>
+        <p class="next-work"><span class="keep">書くパート・文量・口調を埋め、</span><span class="keep">まずは導入部分から。</span><span class="keep">本文まで依頼された場合に使います。</span></p>
+        
+        <details class="prompt-card">
+          <summary>構成を磨くプロンプト</summary>
+          <div class="prompt-bar"><button type="button" data-copy="prompt3" aria-label="構成を磨くプロンプトを全文コピー">全文をコピー</button></div>
+          <pre id="prompt3" class="prompt-text">以下の構成案を「いち視聴者」として読み、率直なダメ出しとアドバイスをお願いします。
+
+【構成案】
+（ここに構成案を貼り付ける）
+
+【フィードバックしてほしい点】
+・途中で飽きそうな部分
+・もっと続きが気になる展開に変えられそうな部分
+・感情が動くポイントの過不足
+・冒頭の引きの強さ</pre>
+        </details>
+        <p class="next-work"><span class="keep">構成だけを納める依頼なら、</span><span class="keep">この指示文で壁打ちをして、</span><span class="keep">依頼の範囲を整えます。</span></p>
+        <div class="save-note" id="rewrite">
+          <h3><span class="keep">どの一文を、</span><span class="keep">なぜ手で直す？</span></h3>
+          <p class="note">架空の依頼例・説明用の下書き</p>
+          <div class="rewrite-diagram">
+            <div class="rewrite-before"><b>手直し前</b><blockquote>「収納しやすくなっています」</blockquote><small>特徴だけで、使う場面が見えない</small></div>
+            <span class="diagram-arrow" aria-hidden="true">↓</span>
+            <div class="rewrite-after"><b>手で直した一文</b><blockquote>「鍵は内ポケット、水筒は横のスペースに。」</blockquote>
+              <dl><div><dt>入れる物</dt><dd>鍵・水筒</dd></div><div><dt>入れる場所</dt><dd>内ポケット・横</dd></div><div><dt>撮るカット</dt><dd>荷物を入れる手元</dd></div></dl>
+            </div>
+          </div>
+          <details class="script-notebook"><summary>声に出すときの確認ノート</summary><div class="notebook-paper">
+            <h3 class="notebook-title">前後の文とつなげて読む</h3>
+            <ol class="notebook-entries">
+              <li><h4>一呼吸置くところ</h4><p>「鍵は内ポケット」で一呼吸。水筒を入れる画に切り替えてから「水筒は横のスペースに」と読みます。</p></li>
+              <li><h4>省略が伝わりにくいとき</h4><p>「水筒は横のスペースに入れます」と補って、映像と一緒に聞いて意味が通るか確認します。</p></li>
+              <li><h4>AIに再修正を頼んだあと</h4><p><span class="keep">「もっと自然な日本語にして」と</span><span class="keep">頼んだ後も、</span><span class="keep">依頼の意味が変わっていないか、</span><span class="keep">人が読みます。</span></p></li>
+            </ol>
+          </div></details>
+          <a class="source" href="sample.html">手直しを反映した練習稿を読む ↗</a>
+        </div><figure class="mina-scene mina-coffee mina-photo-phone"><img src="assets/mina-light-phone.webp" width="1350" height="575" loading="lazy" decoding="async" alt="明るい室内でスマートフォンを手にするイメージ"></figure></section>
+
+  <section class="section plan" aria-labelledby="plan-title">
+    <div class="section-heading">
+      <p class="eyebrow">忙しい日は途中で区切ってOK</p>
+      <h2 id="plan-title"><span class="keep">すきま時間で進める</span><span class="keep">3日プラン</span></h2>
+    </div>
+    <figure class="mina-scene mina-wrap mina-photo-notes"><img src="assets/mina-light-notes.webp" width="1350" height="575" loading="lazy" decoding="async" alt="机でノートを開き、ペンを持つイメージ"></figure>
+    <ol class="three-day-map">
+      <li><strong>1日目</strong><b>条件と構成</b><span>誰に・何のため？</span></li>
+      <li><strong>2日目</strong><b>1パート書く</b><span>直す一文を決める</span></li>
+      <li><strong>3日目</strong><b>読み上げて保存</b><span>尺・ファイル形式</span></li>
+    </ol>
+  </section>
+
+  <section class="section finish" aria-labelledby="finish-title">
+    <div class="section-heading">
+      <h2 id="finish-title">最初の1件を進めるチェック</h2>
+    </div>
+    <figure class="mina-scene mina-notes mina-photo-desk"><img src="assets/mina-light-desk.webp" width="1350" height="575" loading="lazy" decoding="async" alt="机でメモとパソコンを使うイメージ"></figure>
+    <fieldset class="checklist"><legend>できたところにチェック</legend><p class="check-progress" role="status">0 / 3 完了</p>
+        <label><input type="checkbox" name="brief"><span><span class="keep">誰に・目的・構成を決め、</span><span class="keep">AI使用と納品条件を確認した</span></span></label>
+        <label><input type="checkbox" name="rewrite"><span><span class="keep">直す一文と理由を決め、</span><span class="keep">語尾の重なりを整えた</span></span></label>
+        <label><input type="checkbox" name="read"><span><span class="keep">声に出して長さを確かめ、</span><span class="keep">保存した台本を開き直した</span></span></label></fieldset>
+  <p class="next-work"><span class="keep">所要時間は内容や修正量によります。</span><span class="keep">受注や収益を保証するものでは</span><span class="keep">ありません。</span></p></section>
+
+  <section class="section openchat" id="openchat" aria-labelledby="openchat-title">
+    <p class="eyebrow">Instagramだけでは伝えきれない</p>
+    <h2 id="openchat-title"><span class="keep">AI×SNSの話を、</span><span class="keep">もっと詳しく</span></h2>
+    <p class="openchat-name"><span class="keep">無料オープンチャット</span><span class="title-line keep">「みな AI×SNS活用術」</span></p>
+    <p class="next-work"><span class="keep">台本づくりを試したら、</span><span class="keep">AI×SNSの活用も知りたい方へ。</span><span class="keep">日々の工夫や実践の話は、</span><span class="keep">こちらのオプチャで。</span></p>
+    <div class="benefit-list">
+      <h3>オプチャで発信すること</h3>
+      <ul>
+        <li><span class="keep">AIを使って試した仕事の進め方</span></li>
+        <li><span class="keep">SNS投稿に取り入れた工夫</span></li>
+        <li><span class="keep">うまくいかなかったことと改善例</span></li>
+      </ul>
+    </div>
+    <a class="line-banner" href="https://line.me/ti/g2/-iZ9LBnhq6PqtsV0tf52ID7_K5QNRmfn5Hqesg?utm_source=invitation&amp;utm_medium=link_copy&amp;utm_campaign=default" aria-label="無料オープンチャット みな AI×SNS活用術に参加する">
+      <img src="assets/openchat-mina-portrait-floral.webp" width="1360" height="765" loading="lazy" decoding="async" alt="">
+    </a>
+    <p class="note"><span class="keep">画像をタップすると</span><span class="keep">オープンチャットが開きます。</span></p>
+  </section>
+  <footer>
+    <a href="https://www.instagram.com/mina_ai_fukugyo/">Instagram @mina_ai_fukugyo</a>
+    <p>みな｜AI×SNSで在宅収入を叶える主婦</p>
+    <p>© 2026 みな. All Rights Reserved.</p>
+  </footer>
+</main>
+<a class="sticky-line-link" href="https://mimatsu037.github.io/line-link/" tabindex="-1" aria-hidden="true">公式LINEで5大特典を受け取る<span aria-hidden="true"></span></a>
+<div class="sr-only" role="status" id="copy-status"></div>
+
+
+</body></html>

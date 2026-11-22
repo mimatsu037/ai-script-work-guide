@@ -4,15 +4,45 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#fff8f3">
   <meta name="description" content="寝かしつけ後のスキマ時間で、AIの下書きを声に出せる台本にする、みなの実践ガイド。">
-  <title>みな流 ChatGPT×台本作成 実践ガイド</title>
+  <title>AI×台本作成の手順書 ＋コピペで使えるプロンプト</title>
   <link rel="stylesheet" href="style.css">
   
-<meta name="robots" content="noindex,nofollow"><script src="copy.js" defer=""></script></head>
+<meta name="robots" content="noindex,nofollow"><script src="copy.js" defer=""></script><style>
+.guide-cover-refit{position:relative;width:min(100%,510px);margin-inline:auto}
+.guide-cover-refit h1{position:absolute;inset:48% 0 20% 37.7%;z-index:1;display:grid;align-content:center;justify-content:center;gap:.25em;margin:0;padding:.35em .15em;background:linear-gradient(124deg,#fcf7f1,#fff5e9);border-radius:14px 0 0 14px;box-shadow:0 1px 12px #7b403712;color:#4c2517;font-family:"Hiragino Mincho ProN","Yu Mincho",serif;font-size:clamp(.67rem,3.5vw,1.55rem);font-weight:900;line-height:1.16;text-align:center;}
+.guide-cover-refit h1 span{display:block;white-space:nowrap}
+.guide-cover-refit h1 span+span{color:#7e402e;font-size:.87em}
+.restored-panel{text-align:center}
+.restored-panel>p,.honest-restored p{line-height:1.75;margin:12px 0}
+.restored-box{padding:14px;margin:16px 0;border:1px solid #e5c8b9;border-radius:14px;background:#fff8f2;color:#493e3c}
+.restored-box p+p{margin-top:9px}
+.legacy-types{display:grid;gap:10px;grid-template-columns:repeat(2,minmax(0,1fr))}
+.legacy-types article{text-align:left;margin-block:8px}
+.legacy-types article:nth-child(2){background:#fcece4}
+.legacy-types ul{padding-left:1.25em;margin:8px 0;font-size:.95rem}
+.legacy-types li+li{margin-top:6px}
+.legacy-rates{margin:8px 0;display:grid;gap:8px}
+.legacy-rates>div{border-radius:8px;background:white;padding:7px}
+.legacy-rates dt{font-weight:750}
+.legacy-rates dd{margin:0;color:#874236;font-weight:900}
+.benefit-list.legacy-chapters li{padding-left:0}
+.benefit-list.legacy-chapters li::before{content:none}
+.honest-restored{background:#493e3c;color:#fff4eb}
+.honest-restored h2{text-align:center}
+.honest-questions{padding:12px 16px;background:#5f4f49;border-radius:12px;list-style:none}
+.honest-questions li+li{margin-top:6px}
+.final-line-button{display:grid;gap:2px;max-width:30rem;margin:18px auto 0;padding:12px;color:#fff;background:#13713f;border-radius:14px;text-decoration:none}
+.final-line-button span{font-size:.82rem}
+.final-offer{padding-bottom:4rem}
+@media(max-width:480px){.legacy-types{grid-template-columns:1fr;gap:0}}
+</style></head>
 <body>
 <main class="page" id="top">
   <header class="hero">
-    <img class="guide-cover" src="assets/mina-script-title.png" width="1280" height="720" alt="初心者向け・コピペで進める保存版。みな流 ChatGPT×台本作成 実践ガイド。">
-    <h1 class="sr-only">みな流 ChatGPT×台本作成 実践ガイド</h1>
+    <div class="guide-cover-refit">
+      <img class="guide-cover" src="assets/mina-script-title.png" width="1280" height="720" alt="">
+      <h1><span>AI×台本作成の手順書</span><span>＋コピペで使えるプロンプト</span></h1>
+    </div>
     <p class="intro"><span class="keep">寝かしつけ後のスキマ時間で、</span><span class="keep">AIの下書きを</span><span class="keep">声に出せる台本に。</span><span class="keep">誰に・何のためにを決めて、</span><span class="keep">最後の言い方を整えます。</span></p>
     <a class="profile" href="https://www.instagram.com/mina_ai_fukugyo/">
       <img src="assets/mina-avatar.png" alt="" width="48" height="48">
@@ -21,15 +51,50 @@
     <a class="jump" href="#practice">作例のプロンプトへ ↓</a>
   </header>
 
-  <section class="section worries" aria-labelledby="worries-title">
-    <h2 id="worries-title"><span class="keep">こんな気持ち、</span><span class="keep">ありませんか？</span></h2>
+  <section class="section worries restored-panel" aria-labelledby="worries-title">
+    <h2 id="worries-title">こんなお悩みありませんか？</h2>
     <ul>
-      <li><span aria-hidden="true">💭</span><p><span class="keep">AIを使って家で収入を得たい。</span><span class="keep">でも、案件って</span><span class="keep">どこで探せばいいの？</span></p></li>
-      <li><span aria-hidden="true">💭</span><p><span class="keep">募集は見つけたけど、</span><span class="keep">未経験の私にできる依頼か</span><span class="keep">どうやって見分けるんだろう。</span></p></li>
-      <li><span aria-hidden="true">💭</span><p><span class="keep">仕事として引き受けるなら、</span><span class="keep">AIの下書きをどう直して</span><span class="keep">納品すればいいか知りたい。</span></p></li>
+      <li><span aria-hidden="true">😰</span><p>スーパーの買い物で値上げにため息。<br><strong>毎月のやりくりがしんどい…</strong></p></li>
+      <li><span aria-hidden="true">😰</span><p>「子どもの将来の選択肢を広げたい」でも、<br><strong>働きに出るまとまった時間はない</strong></p></li>
+      <li><span aria-hidden="true">😰</span><p>在宅ワークに興味はあるけど、<br><strong>特別なスキルがないから無理</strong>だと思っている</p></li>
     </ul>
-    <p class="section-lead"><span class="keep">まずは架空の商品紹介案件で、</span><span class="keep">依頼文の読み方から納品前の確認まで</span><span class="keep">一緒に練習してみましょう。</span></p>
+    <p>物価は上がるのに、使えるお金は増えない。<br>変わりたいと願いつつ、忙しさに追われて<strong>「何も変わらないまま1年が過ぎる」</strong>…<br>実はこれ、一番もったいない状態なんです。</p>
+    <div class="restored-box">
+      <p><strong>そのお悩み、今すぐ<br>「ChatGPT×台本作成」<br>で解決できます！✊</strong></p>
+      <p>AIを賢く使えば、未経験からでも<br>子どもがお昼寝中の<strong>「スキマ時間」</strong>でサクッとお仕事ができちゃうんです。</p>
+    </div>
     <figure class="mina-scene mina-phone mina-photo-phone"><img src="assets/mina-light-phone.webp" width="1350" height="575" loading="lazy" decoding="async" alt="明るい室内でスマートフォンを手にするイメージ"></figure>
+  </section>
+
+  <section class="section restored-panel" aria-labelledby="market-title">
+    <p class="eyebrow">今がチャンス！</p>
+    <h2 id="market-title">💻 こんな案件が急増中！</h2>
+    <p>クラウドワークスには<strong>「ChatGPT使用可」「AI歓迎」</strong>と明記された動画台本案件があります。</p>
+    <div class="restored-box">
+      <h3>✏️ 気になる報酬の目安</h3>
+      <dl class="legacy-rates">
+        <div><dt>📱 ショート動画（1分未満）</dt><dd>1本 800〜1,200円</dd></div>
+        <div><dt>🎞️ 長尺動画（数千文字）</dt><dd>1本 3,000〜12,000円</dd></div>
+      </dl>
+      <p class="note">旧版で紹介した目安です。現時点の相場や将来の収入を示すものではありません。報酬やAI利用条件は募集ごとに確認してください。</p>
+    </div>
+    <p>未経験から応募できる募集や、<strong>継続案件につながるケースもある</strong>ので、興味があれば試してみるのがおすすめです。</p>
+  </section>
+
+  <section class="section restored-panel" aria-labelledby="types-title">
+    <h2 id="types-title">知っておきたい「2つのタイプ」</h2>
+    <p>案件に応募する前に、まずこの違いを図解でイメージしておきましょう！</p>
+    <div class="legacy-types">
+      <article class="restored-box">
+        <p class="eyebrow">タイプA <span aria-hidden="true">🤖📝</span></p><h3>本文までAIで出力する</h3>
+        <ul><li>ChatGPTで構成も本文も<strong>まるごと作る</strong></li><li>2chまとめ・解説系動画に多い</li><li>量産しやすく<strong>初心者向け</strong></li></ul>
+      </article>
+      <article class="restored-box">
+        <p class="eyebrow">タイプB <span aria-hidden="true">🧠✨</span></p><h3>構成づくりが本体</h3>
+        <ul><li>本文はツール任せ。ライターは<strong>「面白い構成を考える」</strong>のが仕事</li><li>物語やストーリー系動画に多い</li><li>高単価だが<strong>構成力が問われる</strong></li></ul>
+      </article>
+    </div>
+    <p class="restored-box">💡 <strong>ワンポイント！</strong><br>タイプBの案件では「AIに丸投げ」はNGです。<strong>「構成は自分で考え、AIは形にしてもらう道具」</strong>と捉えると採用されやすくなります。</p>
   </section>
 
   <section class="section story" aria-labelledby="story-title">
@@ -44,26 +109,27 @@
     </div>
   </section>
 
-  <section class="section benefits" id="line-benefits" aria-labelledby="benefits-title">
-    <p class="eyebrow keep">ここから先はLINE登録者限定 🎁</p>
-    <h2 id="benefits-title"><span class="keep">『おうちワーク</span><span class="keep">始め方ガイド』</span><span class="title-line"><span class="keep">5大特典を</span><span class="keep">無料プレゼント中</span></span></h2>
-    <a class="line-banner" href="https://mimatsu037.github.io/line-link/" aria-label="LINEに登録して5大特典を受け取る"><img src="assets/line-benefits-cta.jpg" alt="公式LINE登録特典。AIマネタイズの教科書。5大特典をまとめて受け取る。"></a>
-    <p><span class="keep">家事や育児の合間に、</span><span class="keep">AIでできる仕事を探すなら。</span><span class="keep">仕事の選び方から発信まで、</span><span class="keep">最初に迷いやすいところを</span><span class="keep"><strong>『AIマネタイズの教科書』</strong>に</span><span class="keep">まとめました。</span></p>
-    <div class="benefit-list">
-      <h3>登録でもらえる5大特典</h3>
-      <ol>
-        <li><span class="keep">AIマネタイズの選び方</span><p><span class="keep">時間と得意なことから、</span><span class="keep">自分に合う仕事を探す。</span></p></li>
-        <li><span class="keep">ChatGPTで使える</span><span class="keep">収益化プロンプト集</span><p><span class="keep">アイデア出しや発信に</span><span class="keep">使える指示文を紹介。</span></p></li>
-        <li><span class="keep">AIマネタイズの</span><span class="keep">実践テンプレート</span><p><span class="keep">次にやることを</span><span class="keep">迷わず決めるための型。</span></p></li>
-        <li><span class="keep">収益化に役立つ</span><span class="keep">生成AIツール3選</span><p><span class="keep">作業に合わせた</span><span class="keep">ツールの使い分け。</span></p></li>
-        <li><span class="keep">AI×SNSで収益につながった</span><span class="keep">実践事例</span><p><span class="keep">実際に何を試し、</span><span class="keep">どう改善したかが分かる。</span></p></li>
-      </ol>
+  <section class="section benefits restored-panel" id="line-benefits" aria-labelledby="benefits-title">
+    <p class="eyebrow">ノウハウを凝縮した限定デジタルブック</p>
+    <h2 id="benefits-title">『AIマネタイズの教科書』</h2>
+    <p>公式LINEにお友だち登録していただいた方限定で<br>無料プレゼント中🎁</p>
+    <a class="line-banner" href="https://mimatsu037.github.io/line-link/" aria-label="公式LINEで無料で受け取る"><img src="assets/line-benefits-cta.jpg" alt="AIマネタイズの教科書｜公式LINEで無料で受け取る"></a>
+    <div class="benefit-list legacy-chapters">
+      <h3>📖 教科書の中身を少しだけご紹介！</h3>
+      <ul>
+        <li>💎第一章: いま一番始めやすいAIマネタイズ手法</li>
+        <li>💎第二章: ChatGPT収益化プロンプト</li>
+        <li>💎第三章: AIマネタイズ神テンプレート</li>
+        <li>💎第四章: マネタイズのための生成AIツール3選</li>
+        <li>💎第五章: AI×SNSで収益を生むリアル事例</li>
+      </ul>
     </div>
+    <p>150万円の損失からようやく掴み取った、<br>「寝かしつけ後の30分が"収入を生む時間"に変わる実践マニュアル」を一冊に詰め込みました。</p>
     <aside class="after">
-      <h3>登録後に分かること</h3>
-      <p><span class="keep">自分の得意なことや</span><span class="keep">使える時間に合わせて、</span><span class="keep">どの仕事から試すか、</span><span class="keep">何をAIに任せるかを</span><span class="keep">整理できます。</span></p>
+      <span class="eyebrow">特別企画</span>
+      <h3>希望者限定『AI収益化サポート会』の実施</h3>
+      <p>LINE読者様限定で、お家で安全に進められる特別なサポート会をご案内しています🌱</p>
     </aside>
-    <p class="note"><span class="keep">画像をタップすると、</span><span class="keep">LINE登録ページが開きます。</span><span class="keep">特典の内容や配布期間は</span><span class="keep">変更される場合があります。</span></p>
   </section>
   <section class="section roles" aria-labelledby="roles-title">
         <h2 id="roles-title"><span class="keep">下書きはChatGPTに。</span><span class="keep">伝わる言い方は、</span><span class="keep">自分で整える。</span></h2>
@@ -283,6 +349,52 @@
       <img src="assets/openchat-mina-portrait-floral.webp" width="1360" height="765" loading="lazy" decoding="async" alt="">
     </a>
     <p class="note"><span class="keep">画像をタップすると</span><span class="keep">オープンチャットが開きます。</span></p>
+  </section>
+  <section class="section honest-restored" aria-labelledby="honest-title">
+    <h2 id="honest-title">⚠️ でも、正直にお伝えします。</h2>
+    <p>ここまで読んで、「プロンプトが分かったから自分でもできそう！」と思ったかもしれません。</p>
+    <p>でも実は…<br><strong>「プロンプトを知っていること」と<br>「実際に継続して稼げること」は全く別物</strong><br>なんです。</p>
+    <ul class="honest-questions">
+      <li>🤔 最初の1件目の仕事はどうやって取るの？</li>
+      <li>🤔 クライアントに選ばれる応募文の書き方は？</li>
+      <li>🤔 「次もお願いします」と言われる納品のコツは？</li>
+    </ul>
+    <p>ここでつまずいて、なかなか一歩を踏み出せない方も少なくありません🥺</p>
+    <div class="restored-box">
+      <h3>💔 実は私も、大失敗だらけでした</h3>
+      <p>私自身、過去に自己流で副業に手を出し、なんと<br><strong>150万円ものお金を失う</strong><br>という痛い経験をしています。</p>
+      <p>「私には才能がないんだ…」とお布団の中で一人泣いた夜は数え切れません。</p>
+      <p>そこから必死に試行錯誤し、ようやく見つけたのが<strong>「AIを賢く活用し、手堅くお家で収入を作るための『実践ノウハウと神テンプレート』」</strong>でした。</p>
+      <p>私と今のあなたの違いは、才能ではありません。<br><strong>「型を知っているかどうか、失敗を避けるコツを知っているかどうか」</strong><br>という部分が大きいと感じています。</p>
+    </div>
+  </section>
+  <section class="section benefits restored-panel final-offer" aria-labelledby="final-benefits-title">
+    <p class="eyebrow">👑 無料で今すぐ手に入る 👑</p>
+    <p class="eyebrow">ノウハウを凝縮した限定デジタルブック</p>
+    <h2 id="final-benefits-title">『AIマネタイズの教科書』</h2>
+    <p>公式LINEにお友だち登録していただいた方限定で<br>無料プレゼント中🎁</p>
+    <a class="line-banner" href="https://mimatsu037.github.io/line-link/" aria-label="公式LINEで無料で受け取る"><img src="assets/line-benefits-cta.jpg" alt="AIマネタイズの教科書｜公式LINEで無料で受け取る"></a>
+    <div class="benefit-list legacy-chapters">
+      <h3>📖 教科書の中身を少しだけご紹介！</h3>
+      <ul>
+        <li>💎第一章: いま一番始めやすいAIマネタイズ手法</li>
+        <li>💎第二章: ChatGPT収益化プロンプト</li>
+        <li>💎第三章: AIマネタイズ神テンプレート</li>
+        <li>💎第四章: マネタイズのための生成AIツール3選</li>
+        <li>💎第五章: AI×SNSで収益を生むリアル事例</li>
+      </ul>
+    </div>
+    <p>150万円の損失からようやく掴み取った、<br>「寝かしつけ後の30分が"収入を生む時間"に変わる実践マニュアル」を一冊に詰め込みました。</p>
+    <aside class="after">
+      <span class="eyebrow">特別企画</span>
+      <h3>希望者限定『AI収益化サポート会』の実施</h3>
+      <p>LINE読者様限定で、お家で安全に進められる特別なサポート会をご案内しています🌱</p>
+    </aside>
+    <a class="final-line-button" href="https://mimatsu037.github.io/line-link/">
+      <strong>💬 公式LINEで無料で受け取る</strong>
+      <span>※配布は期間限定です。お早めにお受け取りください</span>
+    </a>
+    <p class="note">※AIの進化に合わせて内容は今後アップデートする場合があります。<br>無料配布の内容・条件は予告なく変更されることがあります。</p>
   </section>
   <footer>
     <a href="https://www.instagram.com/mina_ai_fukugyo/">Instagram @mina_ai_fukugyo</a>

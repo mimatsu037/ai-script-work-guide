@@ -8,10 +8,13 @@
   <link rel="stylesheet" href="style.css">
   
 <meta name="robots" content="noindex,nofollow"><script src="copy.js" defer=""></script><style>
-.guide-cover-refit{position:relative;width:min(100%,510px);margin-inline:auto;container-type:inline-size}
-.guide-cover-refit h1{position:absolute;inset:19.5% 0 19.7% 36.9%;z-index:1;display:grid;align-content:center;justify-content:center;gap:.3em;margin:0;padding:.6em .15em 0;background:linear-gradient(124deg,#fbf7f2,#fff4e8);border-radius:9px 0 0 9px;box-shadow:0 1px 12px #7b403712;color:#4c2517;font-family:"Hiragino Mincho ProN","Yu Mincho",serif;font-size:clamp(1rem,6.05cqi,1.95rem);font-weight:900;line-height:1.12;text-align:center;}
+/* Keep the original brushstroke signature and place the live title directly on the scene. */
+.guide-cover-refit{position:relative;width:min(100%,510px);margin-inline:auto;container-type:inline-size;isolation:isolate}
+.guide-cover-refit::before{content:"";position:absolute;z-index:1;inset:19.5% 0 19.2% 35.8%;background:radial-gradient(ellipse at 90% 75%,#f6e8dd 0%,transparent 68%),linear-gradient(108deg,#fbf8f4,#faf4ed 62%,#f5ebe4);mask-image:linear-gradient(to right,transparent,#000 4.6%),linear-gradient(to bottom,transparent,#000 3%,#000 93%,transparent);mask-composite:intersect;pointer-events:none}
+.guide-cover-refit .guide-cover-badge{position:absolute;inset:0;width:100%;height:auto;z-index:2;clip-path:polygon(37.25% 38.7%,40.55% 37.2%,41.2% 39.1%,52% 37.5%,55.55% 38.4%,56.9% 40.75%,56.75% 44.85%,54.85% 47.05%,48.05% 49.15%,39.6% 49.4%,38% 47.6%,38% 43%);pointer-events:none}
+.guide-cover-refit h1{position:absolute;inset:50% 0 19.8% 37.3%;z-index:3;display:grid;align-content:center;justify-content:center;gap:.3em;margin:0;padding:0 .15em;color:#4c2517;font-family:"Hiragino Mincho ProN","Yu Mincho",serif;font-size:clamp(1rem,6.05cqi,1.95rem);font-weight:900;line-height:1.12;text-align:center}
 .guide-cover-refit h1 span{display:block;white-space:nowrap}
-.guide-cover-refit h1 span+span{color:#7e402e;font-size:.79em}.guide-cover-refit h1::before{content:"みな流";justify-self:start;color:#fff8f2;background:#aa542f;padding:.23em .65em;border-radius:.6em;font:800 .45em/1.1 "Noto Sans JP",sans-serif;letter-spacing:.05em}
+.guide-cover-refit h1 span+span{color:#7e402e;font-size:.79em}
 .restored-panel{text-align:center}
 .restored-panel>p,.honest-restored p{line-height:1.75;margin:12px 0}
 .restored-box{padding:14px;margin:16px 0;border:1px solid #e5c8b9;border-radius:14px;background:#fff8f2;color:#493e3c}
@@ -63,6 +66,7 @@
   <header class="hero">
     <div class="guide-cover-refit">
       <img class="guide-cover" src="assets/mina-script-title.png" width="1280" height="720" alt="">
+      <img class="guide-cover-badge" src="assets/mina-script-title.png" width="1280" height="720" alt="">
       <h1><span>AI×台本作成の手順書</span><span>＋コピペで使えるプロンプト</span></h1>
     </div>
     <p class="intro"><span class="keep">寝かしつけ後のスキマ時間で、</span><span class="keep">AIの下書きを</span><span class="keep">声に出せる台本に。</span><span class="keep">誰に・何のためにを決めて、</span><span class="keep">最後の言い方を整えます。</span></p>
